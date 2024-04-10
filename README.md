@@ -4,6 +4,10 @@ by Peifu Liu, Tingfa Xu, Huan Chen, Shiyun Zhou, Haolin Qin, Jianan Li.
 
 [![arXiv](https://img.shields.io/badge/📃-arXiv-ff69b4)](https://arxiv.org/abs/2312.01060)
 
+## TODO
+- [ ] HSOD-BIT dataset and checkpoints
+- [ ] Pretrained weight
+
 ## Introduction
 
 Hyperspectral salient object detection (HSOD) aims to detect spectrally salient objects in hyperspectral images (HSIs).
