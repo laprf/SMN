@@ -5,8 +5,10 @@ by Peifu Liu, Tingfa Xu, Huan Chen, Shiyun Zhou, Haolin Qin, Jianan Li.
 [![arXiv](https://img.shields.io/badge/📃-arXiv-ff69b4)](https://arxiv.org/abs/2312.01060)
 
 ## TODO
-- [ ] HSOD-BIT dataset and checkpoints
-- [ ] Pretrained weight
+
+- [x] HSOD-BIT dataset and checkpoints
+- [x] Pretrained weight
+- [x] Ground truth edge maps
 
 ## Introduction
 
@@ -47,11 +49,11 @@ Please ensure you have these libraries installed to properly run our code.
 
 ## Checkpoints and Results
 
-Our HSOD-BIT dataset is currently in preparation. Until it's ready, we will not be providing checkpoints and test
-results on HSOD-BIT. We are working diligently to complete the dataset preparation and will provide updates here as soon
-as it's available.
+Checkpoints, test results, and ground truth edge maps on the HSOD-BIT dataset are available for download
+from [Google Drive](https://drive.google.com/drive/folders/1ZOyFSOmyyLcodJ_QIljLdnRR-H1nvWtT?usp=sharing)
+or [Baidu Drive (XX6K)](https://pan.baidu.com/s/1eDFkvXW7ibWi2ba82nnq7A?pwd=XX6K).
 
-Checkpoints and test results on the HS-SOD dataset are available for download
+Checkpoints, test results, and ground truth edge maps on the HS-SOD dataset are available for download
 from [Google Drive](https://drive.google.com/drive/folders/1HWVb-HEYtwzH5VRNcW5wrQOrVvauCcAo?usp=sharing)
 or [Baidu Drive (gc81)](https://pan.baidu.com/s/1HnFzJ720TzJL704FKaPf5Q).
 
@@ -59,7 +61,8 @@ or [Baidu Drive (gc81)](https://pan.baidu.com/s/1HnFzJ720TzJL704FKaPf5Q).
 
 ### Data Preparation
 
-Please download the HS-SOD dataset from [https://github.com/gistairc/HS-SOD](https://github.com/gistairc/HS-SOD). After
+Take HS-SOD as an example. Please download the HS-SOD dataset
+from [https://github.com/gistairc/HS-SOD](https://github.com/gistairc/HS-SOD). After
 downloading, divide the dataset into training and testing sets and place them in the `./DataStorage/HS-SOD/` directory.
 The ground truth images of the edges are generated using [pidinet](https://github.com/hellozhuo/pidinet). Please place
 them in the `edge_GT/` folder.
@@ -144,12 +147,14 @@ results are stored in memory. This significantly reduces runtime without substan
 @ARTICLE{10313066,
   author={Liu, Peifu and Xu, Tingfa and Chen, Huan and Zhou, Shiyun and Qin, Haolin and Li, Jianan},
   journal={IEEE Transactions on Multimedia}, 
-  title={Spectrum-driven Mixed-frequency Network for Hyperspectral Salient Object Detection}, 
-  year={2023},
-  volume={},
+  title={Spectrum-Driven Mixed-Frequency Network for Hyperspectral Salient Object Detection}, 
+  year={2024},
+  volume={26},
   number={},
-  pages={1-15},
+  pages={5296-5310},
+  keywords={Image edge detection;Feature extraction;Object detection;Hyperspectral imaging;Head;Neural networks;Image color analysis;Hyperspectral salient object detection (HSOD);mixed-frequency attention;spectrum},
   doi={10.1109/TMM.2023.3331196}}
+
 ```
 
 ## Acknowledgement
@@ -158,6 +163,11 @@ Our implementation is mainly based on the following codebases. We gratefully tha
 works.
 
 [NATTEN](https://github.com/SHI-Labs/NATTEN), [ITTI-saliency-detection](https://github.com/Samaretas/ITTI-saliency-detection), [Evaluate-SOD](https://github.com/Hanqer/Evaluate-SOD)
+
+## Other Works
+
+If you are interested in our work, please check out our other projects:
+[HSOD-BIT](https://github.com/anonymous0519/HSOD-BIT), [DMSSN](https://github.com/q2479036243/DMSSN).
 
 ## License
 
